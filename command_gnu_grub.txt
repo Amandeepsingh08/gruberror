@@ -1,0 +1,26 @@
+CODE FOR GNU GRUB version removing code you can follow this code to rid from your an error.
+*diskpart
+*list disk
+*sel disk 0
+*list vol
+*sel vol a/c to your drive partition fat32
+*assign letter=z(a/c to ur choice):
+*exit
+*z:
+*dir
+*cd efi
+*dir 
+*cd boot
+*dir
+*del grub.efi
+*del gnuerv. efi
+*cd..
+*dir
+*rmdir /s OPREATING SYSTEM NAME.
+
+MORE ABOUT GNUGRUB VERSION 2.02***********
+If you later decide to remove GNU/Linux, GRUB has no reference point on boot - so it gives you an error. Also, GRUB supersedes the Windows boot loader in order of operation, so Windows never boots. Solution: Take your original Windows DVD and boot your PC with it. In the menu sequence, select “Advanced Options”, and then “Command Prompt”.
+How to Fix Minimal BASH Like Line Editing is Supported GRUB Error In Linux?
+Last Updated: 11-11-2019
+GNU GRUB (Stands for GNU GRand Unified Bootloader) is a boot loader package. It is a part of the GNU project. It is the reference implementation of the Free Software Foundation’s Multiboot Specification, that provides a user the choice to boot one of multiple operating systems installed on a computer. It also provides the facility to choose a specific kernel configuration available on a specific OS partition. The Minimal BASH Like Line Editing is Supported GRUB Error In Linux looks like as shown below:
+follow the particular link  which i gave here:https://www.geeksforgeeks.org/how-to-fix-minimal-bash-like-line-editing-is-supported-grub-error-in-linux/
